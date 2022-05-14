@@ -1,0 +1,24 @@
+nav {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
+  background-color: var(--background-contrast);
+}
+
+nav a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--primary);
+  text-decoration: none;
+  font-size: 1rem;
+  border-bottom: 2px solid transparent;
+  transition: all 0.2s ease-in-out;
+}
+
+nav a:hover {
+  border-bottom-color: var(--primary);
+}
+
+.active {
+  color: var(--secondary);
+}
