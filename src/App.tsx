@@ -9,12 +9,14 @@ function App() {
   return (
     <BrowserRouter>
       <div className="container">
-        <Routes>
-          <Route path="/" element={<Clock />}></Route>
-          <Route path="alarm" element={<Alarm />}></Route>
-          <Route path="timer" element={<Timer />}></Route>
-          <Route path="stopwatch" element={<Stopwatch />}></Route>
-        </Routes>
+        <div className="content">
+          <Routes>
+            <Route path="/" element={<Clock />}></Route>
+            <Route path="alarm" element={<Alarm />}></Route>
+            <Route path="timer" element={<Timer />}></Route>
+            <Route path="stopwatch" element={<Stopwatch />}></Route>
+          </Routes>
+        </div>
         <Navigation />
       </div>
     </BrowserRouter>
