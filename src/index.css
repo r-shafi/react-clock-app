@@ -1,3 +1,10 @@
+:root {
+  --background: #000101;
+  --background-contrast: #000505;
+  --primary: #fbf7f8;
+  --secondary: #fe4a50;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -8,7 +15,12 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
-  background: #000101;
-  color: #fbf7f8;
-  /* #fe4a50 */
+  background: var(--background);
+  color: var(--primary);
+}
+
+.container {
+  height: 100vh;
+  display: grid;
+  grid-template-rows: 90vh 10vh;
 }
