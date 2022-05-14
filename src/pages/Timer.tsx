@@ -1,1 +1,3 @@
-export default function Timer() {}
+export default function Timer() {
+  return <h1>Timer</h1>;
+}

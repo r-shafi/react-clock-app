@@ -1,3 +1,3 @@
 export default function Clock() {
-  return <h1>Hey</h1>;
+  return <h1>Clock</h1>;
 }
