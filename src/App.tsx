@@ -1,12 +1,23 @@
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Navigation from './components/Navigation';
+import Alarm from './pages/Alarm';
 import Clock from './pages/Clock';
+import Stopwatch from './pages/Stopwatch';
+import Timer from './pages/Timer';
 
 function App() {
   return (
-    <div>
-      <Clock />
-      <Navigation />
-    </div>
+    <BrowserRouter>
+      <div className="container">
+        <Routes>
+          <Route path="/" element={<Clock />}></Route>
+          <Route path="alarm" element={<Alarm />}></Route>
+          <Route path="timer" element={<Timer />}></Route>
+          <Route path="stopwatch" element={<Stopwatch />}></Route>
+        </Routes>
+        <Navigation />
+      </div>
+    </BrowserRouter>
   );
 }
 
