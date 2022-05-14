@@ -22,3 +22,4 @@ I will build a clock app with similar functionalities as found in my phone.
   - [ ] Add Timer
   - [ ] Reset Timer
 - [ ] Stopwatch
+- [ ] Screensaver
